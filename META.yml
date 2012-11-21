@@ -21,4 +21,4 @@ requires:
   Carp: 1.26
   SQL::Maker: 1.07
   perl: 5.006
-version: 0.01
+version: 0.02

@@ -18,7 +18,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -41,7 +41,7 @@ sub register {
     $conf ||= {};
 
     croak "driver is required!" unless $conf->{driver};
-    $app->attr( 'sb' => sub { SQL::Maker->new( driver => $conf->{driver} ) } );
+    $app->attr( 'sb' => sub { SQL::Maker->new( %$conf ) } );
 }
 
 =head1 AUTHOR
