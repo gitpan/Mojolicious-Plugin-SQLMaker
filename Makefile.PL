@@ -18,8 +18,9 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        'SQL::Maker' => 1.07,
-        'Carp'       => 1.26,
+        'Mojolicious' => 3.63,
+        'SQL::Maker'  => 1.07,
+        'Carp'        => 1.26,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Mojolicious-Plugin-SQLMaker-*' },

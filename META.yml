@@ -19,6 +19,7 @@ no_index:
     - inc
 requires:
   Carp: 1.26
+  Mojolicious: 3.63
   SQL::Maker: 1.07
   perl: 5.006
-version: 0.02
+version: 0.03
